@@ -1,0 +1,46 @@
+@import "./fonts.css";
+@import "tailwindcss";
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  line-height: 1.5;
+  background-color: var(--color-gray-950);
+  color: var(--color-gray-300);
+}
+
+* {
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+}
+
+button {
+  cursor: pointer;
+}
+
+*:disabled {
+  cursor: not-allowed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
