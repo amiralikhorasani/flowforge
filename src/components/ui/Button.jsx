@@ -3,15 +3,16 @@ function Button({
   className = "",
   variant = "primary",
   size = "medium",
+  iconBtn = false,
   outline = false,
   ...props
 }) {
-  const base = `rounded-lg leading-5 font-medium focus:ring-2 focus:ring-violet-900 focus:outline-none flex items-center justify-center gap-2`;
+  const base = `${iconBtn ? "rounded-full aspect-square" : "rounded-lg"} leading-5 font-medium focus:ring-2 focus:ring-violet-500/20 focus:outline-none flex items-center justify-center gap-2`;
 
   const buttonSizes = {
-    small: `px-2.5 py-2 text-xs sm:text-sm md:px-3.5 md:py-2 sm:px-3`,
-    medium: `px-3.5 py-2.5 text-sm sm:text-base md:px-4.5 md:py-3 sm:px-4`,
-    large: `px-5 py-3 text-base sm:text-lg md:px-6 md:py-3.5 sm:px-5.5`,
+    small: `${iconBtn ? "p-1.5 [&>svg]:size-4" : "px-2.5 py-2 md:px-3.5 md:py-2 sm:px-3 text-xs sm:text-sm"}`,
+    medium: `${iconBtn ? "p-2 [&>svg]:size-5" : "px-3.5 py-2.5 md:px-4.5 md:py-3 sm:px-4 text-sm sm:text-base"}`,
+    large: `${iconBtn ? "p-2 [&>svg]:size-6" : "px-5 py-3 md:px-6 md:py-3.5 sm:px-5.5 text-base sm:text-lg"}`,
   };
 
   const variants = {

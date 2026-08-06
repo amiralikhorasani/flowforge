@@ -1,6 +1,6 @@
 function Input({ label, size = "medium", className = "", ...props }) {
   const base =
-    "w-full rounded-lg border-2 border-slate-700 bg-tramsparent font-normal text-slate-300 placeholder:text-slate-500 outline-none focus:border-slate-600 focus:ring-1 focus:ring-slate-600 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400";
+    "w-full rounded-lg border-2 border-slate-700 bg-tramsparent font-normal text-slate-300 placeholder:text-slate-500 outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400";
 
   const inputSizes = {
     small: "px-2 py-1.5 sm:px-3  sm:py-2 text-xs sm:text-sm",

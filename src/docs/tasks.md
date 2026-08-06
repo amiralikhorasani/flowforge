@@ -9,11 +9,11 @@
 - [✅] Configure Tailwind CSS
 - [ ] Configure Path Aliases
 - [✅] Create Project Folder Structure
-- [ ] Setup Git Repository
-- [ ] Create GitHub Repository
-- [ ] Setup Environment Variables
-- [ ] Create Documentation Folder
-- [ ] Write Initial README
+- [✅] Setup Git Repository
+- [✅] Create GitHub Repository
+- [✅] Setup Environment Variables
+- [✅] Create Documentation Folder
+- [✅] Write Initial README
 - [ ] Create Design Tokens
 - [ ] Configure Light/Dark Theme System
 - [✅] Configure Fonts
@@ -27,46 +27,50 @@
 
 ## Foundation
 
-- [ ] Color System
-- [ ] Typography Scale
+- [✅] Color System
+- [✅] Typography Scale
 - [ ] Spacing System
 - [ ] Border Radius Tokens
 - [ ] Shadow Tokens
 - [ ] Animation Tokens
 - [✅] Icon Library Setup
 
+### finished 👇 16 mordad
+
 ## Core Components
 
 - [✅] Button
-- [ ] Icon Button
-- [ ] Input
-- [ ] Textarea
-- [ ] Select
-- [ ] Checkbox
-- [ ] Radio
-- [ ] Switch
-- [ ] Badge
-- [ ] Chip
-- [ ] Avatar
+- [✅] Icon Button
+- [✅] Input
+- [✅] Textarea
+- [✅] Select
+- [✅] Checkbox
+- [✅] Radio
+- [✅] Switch
+- [✅] Badge
+- [✅] Chip
+- [✅] Avatar
 - [ ] Divider
-- [ ] Tooltip
+- [✅] Tooltip
 - [ ] Modal
 - [ ] Drawer
 - [ ] Dropdown
-- [ ] Context Menu
+- [☑️] Context Menu ⚠️
 - [ ] Tabs
 - [ ] Accordion
 - [ ] Breadcrumb
 - [ ] Pagination
 - [ ] Skeleton
-- [ ] Spinner
+- [✅] Spinner
 - [ ] Toast
-- [ ] Empty State
-- [ ] Loading Screen
-- [ ] Error State
+- [✅] Empty State
+- [✅] Loading Screen
+- [✅] Error State
 - [ ] Card Component
 
 ---
+
+### finished 👇 19 mordad
 
 # 🧭 Phase 3 — Navigation
 
@@ -78,6 +82,8 @@
 - [ ] Command Palette (Ctrl + K)
 
 ---
+
+### finished 👇 22 mordad
 
 # 🔐 Phase 4 — Authentication
 
@@ -91,6 +97,8 @@
 
 ---
 
+### finished 👇 25 mordad
+
 # 🏠 Phase 5 — Dashboard
 
 - [ ] Dashboard Overview
@@ -103,6 +111,8 @@
 
 ---
 
+### finished 👇 29 mordad
+
 # 👥 Phase 6 — Workspace
 
 - [ ] Workspace List
@@ -112,6 +122,8 @@
 - [ ] Workspace Settings
 
 ---
+
+### finished 👇 5 shahrivar
 
 # 📁 Phase 7 — Projects
 
@@ -124,6 +136,8 @@
 - [ ] Project Members
 
 ---
+
+### finished 👇 9 shahrivar
 
 # ✅ Phase 8 — Tasks
 
@@ -142,6 +156,8 @@
 
 ---
 
+### finished 👇 13 shahrivar
+
 # 📋 Phase 9 — Kanban Board
 
 - [ ] Todo Column
@@ -153,6 +169,8 @@
 
 ---
 
+### finished 👇 17 shahrivar
+
 # 📅 Phase 10 — Calendar
 
 - [ ] Calendar View
@@ -163,6 +181,8 @@
 
 ---
 
+### finished 👇 20 shahrivar
+
 # 🗺 Phase 11 — Timeline
 
 - [ ] Timeline View
@@ -171,6 +191,8 @@
 - [ ] Roadmap View
 
 ---
+
+### finished 👇 25 shahrivar
 
 # 📊 Phase 12 — Analytics
 
@@ -181,6 +203,8 @@
 - [ ] Sprint Analytics
 
 ---
+
+### finished 👇 28 shahrivar
 
 # 👤 Phase 13 — Profile
 

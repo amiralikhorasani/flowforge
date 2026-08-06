@@ -1,11 +1,11 @@
 import { Suspense } from "react";
 import { Outlet } from "react-router";
-import Spinner from "../components/ui/Spinner";
+import LoadingScreen from "../components/ui/LoadingScreen";
 
 function AppLayout() {
   return (
     <div>
-      <Suspense fallback={<Spinner />}>
+      <Suspense fallback={<LoadingScreen message="Loading..." size="large" />}>
         <Outlet />
       </Suspense>
     </div>
