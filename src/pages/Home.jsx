@@ -1,5 +1,9 @@
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <div className="h-[150vh]"></div>
+    </div>
+  );
 }
 
 export default Home;

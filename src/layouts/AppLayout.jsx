@@ -1,13 +1,20 @@
 import { Suspense } from "react";
 import { Outlet } from "react-router";
 import LoadingScreen from "../components/ui/LoadingScreen";
+import Header from "../components/ui/header/Header";
 
 function AppLayout() {
   return (
-    <div>
-      <Suspense fallback={<LoadingScreen message="Loading..." size="large" />}>
-        <Outlet />
-      </Suspense>
+    <div className="scroll-smooth">
+      <Header />
+
+      <main className="mx-auto max-w-full scroll-smooth px-3 sm:max-w-5/6 sm:px-4">
+        <Suspense
+          fallback={<LoadingScreen message="Loading..." size="large" />}
+        >
+          <Outlet />
+        </Suspense>
+      </main>
     </div>
   );
 }
