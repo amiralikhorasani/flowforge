@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { Outlet } from "react-router";
 import LoadingScreen from "../components/ui/LoadingScreen";
 import Header from "../components/ui/header/Header";
+import Footer from "../components/ui/Footer";
 
 function AppLayout() {
   return (
@@ -15,6 +16,8 @@ function AppLayout() {
           <Outlet />
         </Suspense>
       </main>
+
+      <Footer />
     </div>
   );
 }

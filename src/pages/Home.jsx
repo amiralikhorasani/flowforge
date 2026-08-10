@@ -1,8 +1,21 @@
+import Features from "../components/ui/Features";
+import HowItWorks from "../components/ui/HowItWorks";
+import Hero from "../components/ui/Hero";
+import BackgroundGradient from "../components/ui/BackgroundGradient";
+import BackgroundPattern from "../components/ui/BackgroundPattern";
+import CTA from "../components/ui/Cta";
+
 function Home() {
   return (
-    <div>
-      <div className="h-[150vh]"></div>
-    </div>
+    <>
+      <BackgroundGradient />
+      <BackgroundPattern />
+
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <CTA />
+    </>
   );
 }
 
