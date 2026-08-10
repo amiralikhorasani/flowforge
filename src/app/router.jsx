@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router";
 import { lazy } from "react";
-import ForgotPassword from "../pages/ForgetPassword";
 
 const AppLayout = lazy(() => import("../layouts/AppLayout"));
 const AppLayoutUser = lazy(() => import("../layouts/AppLayoutUser"));
 const Home = lazy(() => import("../pages/Home"));
 const Login = lazy(() => import("../pages/Login"));
 const Register = lazy(() => import("../pages/Register"));
+const ForgotPassword = lazy(() => import("../pages/ForgetPassword"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 
 const router = createBrowserRouter([
