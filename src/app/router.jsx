@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import { lazy } from "react";
 
 const AppLayout = lazy(() => import("../layouts/AppLayout"));
+const AppLayoutUser = lazy(() => import("../layouts/AppLayoutUser"));
 const Home = lazy(() => import("../pages/Home"));
 const Login = lazy(() => import("../pages/Login"));
 const Register = lazy(() => import("../pages/Register"));
@@ -16,6 +17,12 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+    ],
+  },
+  {
+    path: "/user",
+    element: <AppLayoutUser />,
+    children: [
       {
         path: "login",
         element: <Login />,
@@ -25,12 +32,11 @@ const router = createBrowserRouter([
         path: "register",
         element: <Register />,
       },
-
-      {
-        path: "*",
-        element: <NotFound />,
-      },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
