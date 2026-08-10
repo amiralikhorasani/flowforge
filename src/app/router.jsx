@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import { lazy } from "react";
+import ForgotPassword from "../pages/ForgetPassword";
 
 const AppLayout = lazy(() => import("../layouts/AppLayout"));
 const AppLayoutUser = lazy(() => import("../layouts/AppLayoutUser"));
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
       {
         path: "register",
         element: <Register />,
+      },
+
+      {
+        path: "forgot-password",
+        element: <ForgotPassword />,
       },
     ],
   },

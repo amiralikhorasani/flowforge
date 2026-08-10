@@ -1,13 +1,13 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { LuArrowRight, LuLock, LuMail } from "react-icons/lu";
+import { LuArrowLeft, LuArrowRight, LuMail } from "react-icons/lu";
 
 import Button from "../components/ui/Button";
 import Container from "../components/ui/Container";
 import Input from "../components/ui/Input";
 import Logo from "../components/ui/Logo";
 
-function Login() {
+function ForgotPassword() {
   return (
     <main className="flex min-h-svh items-center justify-center px-4 py-5">
       <motion.div
@@ -19,10 +19,13 @@ function Login() {
         <Logo size="large" className="mx-auto mb-10" />
         <Container className="p-6 sm:p-8">
           <div className="mb-8 text-center">
-            <h1 className="text-3xl font-bold text-gray-200">Welcome back</h1>
+            <h1 className="text-3xl font-semibold text-gray-200">
+              Forgot Password?
+            </h1>
 
-            <p className="mt-2 text-sm text-gray-400">
-              Sign in to continue to FlowForge
+            <p className="mt-3 text-sm leading-6 text-gray-400">
+              Enter your email address and we'll send you a link to reset your
+              password.
             </p>
           </div>
 
@@ -34,46 +37,29 @@ function Login() {
               icon={LuMail}
             />
 
-            <Input
-              type="password"
-              label={
-                <div className="flex items-center justify-between">
-                  <span>Password</span>
-                  <Link
-                    to="/user/forgot-password"
-                    className="text-xs text-blue-400 hover:text-blue-300"
-                  >
-                    Forgot password?
-                  </Link>
-                </div>
-              }
-              placeholder="••••••••"
-              icon={LuLock}
-            />
-
             <Button
               variant="secondry"
               size="large"
               className="w-full justify-center"
             >
-              <span>Sign In</span>
+              <span>Send Reset Link</span>
               <LuArrowRight size={18} />
             </Button>
           </form>
 
-          <p className="mt-6 text-center text-sm text-gray-500">
-            Don't have an account?{" "}
+          <div className="mt-6 text-center">
             <Link
-              to="/user/register"
-              className="text-blue-400 hover:text-blue-300"
+              to="/user/login"
+              className="inline-flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-blue-400"
             >
-              Create one
+              <LuArrowLeft size={16} />
+              Back to Sign In
             </Link>
-          </p>
+          </div>
         </Container>
       </motion.div>
     </main>
   );
 }
 
-export default Login;
+export default ForgotPassword;

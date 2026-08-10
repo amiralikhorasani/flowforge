@@ -5,6 +5,7 @@ import { LuArrowRight, LuLock, LuMail, LuUser } from "react-icons/lu";
 import Button from "../components/ui/Button";
 import Container from "../components/ui/Container";
 import Input from "../components/ui/Input";
+import Logo from "../components/ui/Logo";
 
 function Register() {
   return (
@@ -15,6 +16,7 @@ function Register() {
         transition={{ duration: 0.5 }}
         className="w-full max-w-md"
       >
+        <Logo size="large" className="mx-auto mb-10" />
         <Container className="p-6 sm:p-8">
           <div className="mb-8 text-center">
             <h1 className="text-3xl font-bold text-gray-200">
