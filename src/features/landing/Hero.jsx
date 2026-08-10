@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { fadeUp } from "../../styles/animations";
 import { GoArrowUpRight } from "react-icons/go";
-import Button from "./Button";
+import Button from "../../components/ui/Button";
 import ScrollHint from "./ScrollHint";
 const ButtonMotion = motion.create(Button);
 

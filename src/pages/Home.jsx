@@ -1,9 +1,9 @@
-import Features from "../components/ui/Features";
-import HowItWorks from "../components/ui/HowItWorks";
-import Hero from "../components/ui/Hero";
+import Features from "../features/landing/Features";
+import HowItWorks from "../features/landing/HowItWorks";
+import Hero from "../features/landing/Hero";
 import BackgroundGradient from "../components/ui/BackgroundGradient";
 import BackgroundPattern from "../components/ui/BackgroundPattern";
-import CTA from "../components/ui/Cta";
+import CTA from "../features/landing/Cta";
 
 function Home() {
   return (

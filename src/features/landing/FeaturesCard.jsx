@@ -1,5 +1,5 @@
 import { FaGripLines } from "react-icons/fa";
-import Container from "./Container";
+import Container from "../../components/ui/Container";
 
 function FeatureCard({ feature }) {
   const Icon = feature.icon;

@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import { GoArrowUpRight } from "react-icons/go";
 
-import Button from "./Button";
-import Container from "./Container";
+import Button from "../../components/ui/Button";
+import Container from "../../components/ui/Container";
 
 function CTA() {
   return (
