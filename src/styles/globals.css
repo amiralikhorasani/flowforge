@@ -6,8 +6,12 @@ body {
   font-weight: 400;
   min-height: 100vh;
   line-height: 1.5;
-  background-color: var(--color-gray-950);
+  background: linear-gradient(var(--color-gray-950), var(--color-slate-900));
   color: var(--color-gray-300);
+  position: relative;
+  overflow-x: hidden;
+  max-width: 2000px;
+  margin-inline: auto;
 }
 
 * {
