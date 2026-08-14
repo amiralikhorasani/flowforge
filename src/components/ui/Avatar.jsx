@@ -1,5 +1,7 @@
+import defaultAvatar from "../../assets/images/default-avatar.png";
+
 function Avatar({
-  src,
+  src = defaultAvatar,
   alt = "Profile image",
   size = "medium",
   className = "",
@@ -10,6 +12,11 @@ function Avatar({
     medium: "size-10 sm:size-12",
     large: "size-14 sm:size-16",
   };
+
+  if (!src) {
+    src = defaultAvatar;
+    alt = "default avatar image";
+  }
 
   return (
     <img
