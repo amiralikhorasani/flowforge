@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { LuHouse } from "react-icons/lu";
 import Navbar from "./Navbar";
 import MobileMenu from "./MobileMenu";
-import useIsOpen from "../../../hooks/useIsOpen";
+import useIsOpen from "../../hooks/useIsOpen";
 
 const navItems = [
   {

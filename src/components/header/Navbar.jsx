@@ -1,8 +1,8 @@
 import { LuLogIn, LuMenu, LuUser } from "react-icons/lu";
-import Button from "../Button";
-import Logo from "../Logo";
-import Container from "../Container";
-import NavbarItems from "./NavbarItems";
+import Button from "../ui/Button";
+import Logo from "../ui/Logo";
+import Container from "../ui/Container";
+import NavbarItems from "../ui/NavbarItems";
 
 function Navbar({ items, handlerOpenMenu }) {
   return (

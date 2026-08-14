@@ -1,5 +1,5 @@
-import Drawer from "../Drawer";
-import NavbarItems from "./NavbarItems";
+import Drawer from "../ui/Drawer";
+import NavbarItems from "../ui/NavbarItems";
 
 function MobileMenu({ items, isOpen, openHandler, closeHandler }) {
   if (!isOpen) return null;
