@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { Outlet } from "react-router";
 import LoadingScreen from "../components/ui/LoadingScreen";
-import Header from "../components/ui/header/Header";
+import Header from "../components/header/Header";
 import Footer from "../components/ui/Footer";
 
 function AppLayout() {
