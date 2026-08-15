@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter, Navigate } from "react-router";
 import { lazy } from "react";
 
 const AppLayout = lazy(() => import("../layouts/AppLayout"));
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <OverviewPage />,
+        element: <Navigate to="overview" replace />,
       },
       {
         path: "overview",
