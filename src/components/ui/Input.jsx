@@ -1,8 +1,12 @@
-function Input({ label, icon, size = "medium", className = "", ...props }) {
+function Input({
+  label,
+  icon,
+  size = "medium",
+  containerClassName = "",
+  className = "",
+  ...props
+}) {
   const Icon = icon;
-
-  // const base =
-  //   "w-full rounded-lg border-2 border-slate-700 bg-tramsparent font-normal text-slate-300 placeholder:text-slate-500 outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400";
 
   const base =
     "w-full rounded-lg border border-gray-700 bg-gray-950/60 text-sm text-gray-200 transition outline-none placeholder:text-gray-600 focus:border-blue-500";
@@ -23,7 +27,7 @@ function Input({ label, icon, size = "medium", className = "", ...props }) {
   };
 
   return (
-    <label className="my-4 block w-full">
+    <label className={`my-4 w-full ${containerClassName}`}>
       {label && (
         <span className="mb-2 block text-sm font-normal text-slate-400">
           {label}
@@ -31,7 +35,7 @@ function Input({ label, icon, size = "medium", className = "", ...props }) {
       )}
       {!Icon ? (
         <input
-          className={`${base} ${inputSizes[size]} ${className}`}
+          className={`${base} ${inputSizes[size]} ${className} disabled:opacity-50`}
           {...props}
         />
       ) : (

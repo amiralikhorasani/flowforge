@@ -39,11 +39,11 @@ function Drawer({ children, isOpen, closeHandler }) {
         className={`flex items-center justify-between px-4! py-6! ${containerClasses}`}
       >
         <motion.div className="w-full">
-          <div className="mb-12 flex w-full items-center justify-between">
+          <div className="mb-5 flex w-full items-center justify-between">
             <Logo />
 
             <Button
-              outline={true}
+              variant="outline"
               className="shadow-none!"
               iconBtn={true}
               size="small"

@@ -15,30 +15,30 @@ function Navbar({ items, handlerOpenMenu }) {
 
       <div className="flex items-center justify-center gap-2">
         <div className="hidden items-center justify-center gap-2 sm:flex">
-          <Button outline={true} to="/user/login">
+          <Button variant="outline" to="/user/login">
             <LuLogIn size={20} />
             <span>Login</span>
           </Button>
 
-          <Button outline={true} to="/user/register">
+          <Button variant="outline" to="/user/register">
             <LuUser size={20} />
             <span>Register</span>
           </Button>
         </div>
 
         <div className="flex items-center justify-center gap-2 sm:hidden">
-          <Button iconBtn={true} outline={true} to="/user/login">
+          <Button iconBtn={true} variant="outline" to="/user/login">
             <LuLogIn size={20} />
           </Button>
 
-          <Button iconBtn={true} outline={true} to="/user/register">
+          <Button iconBtn={true} variant="outline" to="/user/register">
             <LuUser size={20} />
           </Button>
         </div>
 
         <Button
           iconBtn={true}
-          outline={true}
+          variant="outline"
           className="shadow-none lg:hidden"
           onClick={handlerOpenMenu}
         >
