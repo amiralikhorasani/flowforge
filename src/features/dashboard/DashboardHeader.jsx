@@ -49,7 +49,7 @@ function DashboardHeader({ openHandler, pages, className = "" }) {
             <div className="flex items-center justify-between gap-3">
               <Button
                 iconBtn={true}
-                outline={true}
+                variant="outline"
                 className="relative shadow-none"
                 aria-label="Notifications"
               >
@@ -61,7 +61,7 @@ function DashboardHeader({ openHandler, pages, className = "" }) {
 
               <Button
                 iconBtn={true}
-                outline={true}
+                variant="outline"
                 className="shadow-none xl:hidden"
                 onClick={openHandler}
               >

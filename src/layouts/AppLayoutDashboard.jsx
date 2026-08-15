@@ -66,33 +66,38 @@ function AppLayout() {
     },
   ];
 
+  const navItemSetting = [
+    {
+      title: "Settings",
+      to: "/dashboard/settings",
+      description: "Manage your account settings and preferences.",
+    },
+  ];
+
   return (
-    <div className="flex h-screen max-h-screen items-start overflow-hidden bg-linear-to-b from-gray-950 to-slate-900">
+    <div className="flex bg-linear-to-b from-gray-950 to-slate-900">
       <DashboardSidebar
         isOpen={isOpen}
-        openHandler={openHandler}
         closeHandler={closeHandler}
         className="mx-5 my-7"
         navItems={navItems}
         navItemsSecondary={navItemsSecondary}
       />
 
-      <div className="scroll_style flex h-svh flex-1 flex-col overflow-y-auto py-7 sm:px-5">
-        <main>
-          <div className="mx-5">
-            <DashboardHeader
-              openHandler={openHandler}
-              pages={[...navItems, ...navItemsSecondary]}
-            />
+      <main className="w-full py-7 sm:px-5">
+        <div className="mx-5">
+          <DashboardHeader
+            openHandler={openHandler}
+            pages={[...navItems, ...navItemsSecondary, ...navItemSetting]}
+          />
 
-            <Suspense
-              fallback={<LoadingScreen message="Loading..." size="large" />}
-            >
-              <Outlet />
-            </Suspense>
-          </div>
-        </main>
-      </div>
+          <Suspense
+            fallback={<LoadingScreen message="Loading..." size="large" />}
+          >
+            <Outlet />
+          </Suspense>
+        </div>
+      </main>
     </div>
   );
 }
