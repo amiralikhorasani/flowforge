@@ -9,7 +9,6 @@ import {
 } from "react-icons/lu";
 import Card from "../../components/ui/Card";
 import Badge from "../../components/ui/Badge";
-import Container from "../../components/ui/Container";
 
 const stats = [
   {
@@ -69,7 +68,7 @@ const miniStats = [
 
 export default function StatsCards() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat, index) => (
           <motion.div
@@ -108,7 +107,7 @@ export default function StatsCards() {
                   {stat.icon}
                 </div>
               </div>
-              {/* Decorative glow */}
+
               <motion.div
                 className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/5 to-transparent opacity-0 group-hover:opacity-100"
                 initial={{ opacity: 0 }}
@@ -120,7 +119,7 @@ export default function StatsCards() {
         ))}
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid grid-cols-2 gap-2 sm:gap-4">
         {miniStats.map((stat, index) => (
           <motion.div
             key={stat.label}
@@ -128,20 +127,24 @@ export default function StatsCards() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
           >
-            <Card className="flex items-center justify-between p-4 sm:p-5">
-              <div className="flex items-center gap-3">
-                <div
-                  className={`rounded-lg bg-white/5 p-2 ${stat.color}`}
-                  aria-hidden="true"
-                >
-                  {stat.icon}
-                </div>
-                <div>
+            <Card className="flex h-full flex-col items-start justify-between gap-5 p-3! sm:flex-row sm:items-center sm:p-4!">
+              <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-center">
+                <div className="flex items-center gap-1">
+                  <div
+                    className={`rounded-lg bg-white/5 p-2 ${stat.color}`}
+                    aria-hidden="true"
+                  >
+                    {stat.icon}
+                  </div>
+
                   <p className="text-xs font-medium text-slate-400">
                     {stat.label}
                   </p>
-                  <p className="text-lg font-bold text-white">{stat.value}</p>
                 </div>
+
+                <p className="text-lg font-bold text-white sm:ml-3">
+                  {stat.value}
+                </p>
               </div>
               <span className="flex items-center gap-1 text-xs font-medium text-emerald-400">
                 <LuTrendingUp size={12} /> {stat.trend}

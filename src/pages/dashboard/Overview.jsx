@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 
+import RecentProjects from "../../features/dashboard/RecentProjects";
 import StatsCards from "../../features/dashboard/StatsCards";
 import DashboardPageLayout from "../../features/dashboard/DashboardPageLayout";
 
@@ -12,6 +13,15 @@ export default function OverviewPage() {
         transition={{ duration: 0.5, delay: 0.1 }}
       >
         <StatsCards />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="mt-7"
+      >
+        <RecentProjects />
       </motion.div>
     </DashboardPageLayout>
   );
