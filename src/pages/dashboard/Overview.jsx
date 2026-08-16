@@ -1,14 +1,18 @@
+import { motion } from "motion/react";
+
+import StatsCards from "../../features/dashboard/StatsCards";
 import DashboardPageLayout from "../../features/dashboard/DashboardPageLayout";
 
 export default function OverviewPage() {
   return (
     <DashboardPageLayout>
-      <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-slate-950/20">
-        <h2 className="text-xl font-semibold text-white">Overview</h2>
-        <p className="mt-2 text-sm text-slate-400">
-          This page is ready for the overview.
-        </p>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
+        <StatsCards />
+      </motion.div>
     </DashboardPageLayout>
   );
 }
