@@ -24,6 +24,7 @@ function Button({
       "bg-linear-to-r from-cyan-400 to-sky-500 text-slate-900! hover:to-sky-400 hover:text-slate-950",
     outline:
       "shadow-[inset_0_0_0_1px_theme(colors.slate.500)] bg-linear-to-r from-gray-800 to-slate-900 hover:text-white! text-slate-300!",
+    ghost: "bg-transparent text-slate-300 hover:text-white!",
   };
 
   if (to) {
