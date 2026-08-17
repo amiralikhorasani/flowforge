@@ -1,11 +1,12 @@
 import { LuFolderKanban } from "react-icons/lu";
 import Button from "../../components/ui/Button";
 import profileImg from "../../assets/images/amiraliProfile.jpg";
-import Card from "../../components/ui/Card";
 import useColumnCount from "./useColumnCount";
 import ProjectCard from "./ProjectCard";
 import CardTitle from "./CardTitle";
 import useShowAllItems from "./useShowAllItems";
+import SectionLayout from "./SectionLayout";
+import CardFooter from "./CardFooter";
 
 const projects = [
   {
@@ -170,8 +171,8 @@ export default function RecentProjects() {
   } = useShowAllItems(projects, columnCount);
 
   return (
-    <Card className="w-full overflow-hidden p-0!">
-      <div className="flex flex-col gap-4 border-b border-white/5 px-5 py-3.5 sm:flex-row sm:items-center sm:justify-between">
+    <SectionLayout>
+      <div className="flex flex-col justify-between gap-4 border-b border-white/5 px-5 py-3.5 sm:flex-row sm:items-center">
         <CardTitle
           title="Recent Projects"
           description="Projects you recently worked on"
@@ -181,7 +182,7 @@ export default function RecentProjects() {
           to="/dashboard/projects"
           variant="ghost"
           size="small"
-          className="text-slate-300 hover:text-white"
+          className="rounded-none! border-t border-white/5 pt-4! pb-1 text-nowrap sm:border-none sm:p-2!"
         >
           View All
         </Button>
@@ -189,19 +190,14 @@ export default function RecentProjects() {
 
       <div className="scroll_style grid grid-cols-1 gap-4 space-y-4 p-5 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {projectsShow.map((project, index) => (
-          <ProjectCard project={project} index={index} />
+          <ProjectCard key={project.id} project={project} index={index} />
         ))}
       </div>
 
-      <div className="border-t border-white/5 py-2">
-        <Button
-          variant="ghost"
-          className="mx-auto px-5 text-slate-300 hover:text-white"
-          onClick={() => setIsShowAllProject((show) => !show)}
-        >
-          {isShowAllProject ? "Less than" : "View All Projects"}
-        </Button>
-      </div>
-    </Card>
+      <CardFooter
+        btnText={isShowAllProject ? "Less than" : "View All Projects"}
+        btnOnClick={() => setIsShowAllProject((show) => !show)}
+      />
+    </SectionLayout>
   );
 }
