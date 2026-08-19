@@ -16,7 +16,7 @@ function ActivityItem({ activity, index }) {
       transition={{ duration: 0.3, delay: index * 0.08 }}
       className="flex! w-full! min-w-0! flex-col! gap-4! px-4! py-3!"
     >
-      <div className="flex items-center gap-2">
+      <div className="flex min-w-0 items-center gap-2">
         <div
           className={`flex min-h-7 min-w-7 items-center justify-center rounded-xl ${activity?.iconBg} ${activity?.iconColor}`}
           aria-hidden="true"
@@ -24,14 +24,14 @@ function ActivityItem({ activity, index }) {
           <Icon size={16} />
         </div>
 
-        <div className="flex items-center gap-1">
+        <div className="flex min-w-0 flex-1 items-center gap-1">
           <Avatar
             src={activity?.user?.avatar}
             alt={activity?.user?.name}
             size="small"
           />
 
-          <span className="max-w-full truncate text-nowrap text-white">
+          <span className="min-w-0 truncate text-nowrap text-white">
             {activity?.user?.name}
           </span>
         </div>
@@ -39,16 +39,16 @@ function ActivityItem({ activity, index }) {
 
       <div className="min-w-0 flex-1 flex-col">
         <div className="mb-7 flex flex-col items-start justify-between gap-1 text-sm">
-          <span className="max-w-full truncate text-nowrap text-slate-400">
+          <span className="max-w-full min-w-0 truncate text-nowrap text-slate-400">
             {activity?.action}
           </span>
 
-          <span className="max-w-full truncate text-nowrap text-slate-300">
+          <span className="max-w-full min-w-0 truncate text-nowrap text-slate-300">
             {activity?.target}
           </span>
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="flex min-w-0 items-center justify-between gap-2">
           <p className="text-xs text-slate-500">{activity?.time}</p>
 
           {activity?.project && (
