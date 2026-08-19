@@ -41,7 +41,7 @@ function Hero() {
           variants={fadeUp(1.1)}
           initial="hidden"
           animate="visible"
-          variant="secondry"
+          variant="secondary"
           size="large"
           to="/user/register"
           className="z-10 mt-20"

@@ -27,7 +27,7 @@ function NotFound() {
           </p>
 
           <Link to="/" className="mt-8 inline-flex">
-            <Button variant="secondry">
+            <Button variant="secondary">
               <LuArrowLeft size={18} />
               <span>Back to Home</span>
             </Button>

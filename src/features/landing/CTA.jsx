@@ -13,7 +13,7 @@ function CTA() {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="relative mt-32 px-4 md:mt-48"
     >
-      <Container className="relative mx-auto max-w-5xl scroll_style overflow-hidden px-6 py-16 text-center md:px-12 md:py-20">
+      <Container className="scroll_style relative mx-auto max-w-5xl overflow-hidden px-6 py-16 text-center md:px-12 md:py-20">
         {/* Background glow */}
         <div className="pointer-events-none absolute top-1/2 left-1/2 -z-0 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/10 blur-3xl" />
 
@@ -33,7 +33,7 @@ function CTA() {
           </p>
 
           <Button
-            variant="secondry"
+            variant="secondary"
             size="large"
             to="/user/register"
             className="mt-10"

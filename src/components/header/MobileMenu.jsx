@@ -9,10 +9,12 @@ function MobileMenu({ items, isOpen, openHandler, closeHandler }) {
       isOpen={isOpen}
       openHandler={openHandler}
       closeHandler={closeHandler}
+      logoUnderLine={true}
     >
       <NavbarItems
         items={items}
         handlerCloseMenu={closeHandler}
+        column={true}
         className="flex-col items-start gap-y-5!"
       />
     </Drawer>
