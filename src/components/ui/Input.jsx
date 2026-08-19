@@ -10,11 +10,11 @@ function Input({
   const Icon = icon;
 
   const base =
-    "w-full rounded-lg border text-sm transition outline-none text-gray-200 border-gray-700  focus:ring-2 focus:bg-slate-950 placeholder:text-slate-500 bg-slate-950/70";
+    "w-full rounded-lg border text-sm transition outline-none text-gray-200 border-gray-700  focus:ring-1 placeholder:text-slate-500 bg-slate-950/70";
 
   const variants = {
-    primary: "focus:border-blue-500 focus:ring-blue-500/20",
-    secondary: "focus:border-violet-500 focus:ring-violet-500/20",
+    primary: "focus:ring-blue-500",
+    secondary: "focus:ring-violet-500",
   };
 
   const baseIconStyle =
@@ -41,14 +41,14 @@ function Input({
       )}
       {!Icon ? (
         <input
-          className={`${base} ${inputSizes[size]} ${className} disabled:opacity-50`}
+          className={`${base} ${inputSizes[size]} ${className} ${variants[variant]} disabled:opacity-50`}
           {...props}
         />
       ) : (
         <div className="relative">
           <Icon className={`${baseIconStyle} ${iconSizes[size]}`} />
           <input
-            className={`${base} ${inputSizes[size]} ${className} ps-10!`}
+            className={`${base} ${inputSizes[size]} ${className} ${variants[variant]} ps-10!`}
             {...props}
           />
         </div>
