@@ -20,7 +20,7 @@ function Button({
   const variants = {
     primary:
       "bg-linear-to-r from-violet-600 to-violet-400 hover:to-violet-500 text-white!",
-    secondry:
+    secondary:
       "bg-linear-to-r from-cyan-400 to-sky-500 text-slate-900! hover:to-sky-400 hover:text-slate-950",
     outline:
       "shadow-[inset_0_0_0_1px_theme(colors.slate.500)] bg-linear-to-r from-gray-800 to-slate-900 hover:text-white! text-slate-300!",

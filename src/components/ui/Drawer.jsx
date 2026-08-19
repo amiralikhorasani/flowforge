@@ -12,7 +12,7 @@ const containerClasses = `fixed inset-0 z-50 h-screen w-4/5 flex  flex-col items
 
 const MotionContainer = motion.create(Container);
 
-function Drawer({ children, isOpen, closeHandler }) {
+function Drawer({ children, isOpen, closeHandler, logoUnderLine = false }) {
   const ref = useOutsideClick(closeHandler);
 
   if (!isOpen) return null;
@@ -39,7 +39,9 @@ function Drawer({ children, isOpen, closeHandler }) {
         className={`flex items-center justify-between px-4! py-6! ${containerClasses}`}
       >
         <motion.div className="w-full">
-          <div className="mb-5 flex w-full items-center justify-between">
+          <div
+            className={`mb-10 flex w-full items-center justify-between ${logoUnderLine ? "border-b border-white/10 pb-5" : ""}`}
+          >
             <Logo />
 
             <Button

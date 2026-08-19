@@ -1,5 +1,6 @@
 function Input({
   label,
+  variant = "primary",
   icon,
   size = "medium",
   containerClassName = "",
@@ -9,7 +10,12 @@ function Input({
   const Icon = icon;
 
   const base =
-    "w-full rounded-lg border border-gray-700 bg-gray-950/60 text-sm text-gray-200 transition outline-none placeholder:text-gray-600 focus:border-blue-500";
+    "w-full rounded-lg border text-sm transition outline-none text-gray-200 border-gray-700  focus:ring-2 focus:bg-slate-950 placeholder:text-slate-500 bg-slate-950/70";
+
+  const variants = {
+    primary: "focus:border-blue-500 focus:ring-blue-500/20",
+    secondary: "focus:border-violet-500 focus:ring-violet-500/20",
+  };
 
   const baseIconStyle =
     "absolute top-1/2 left-3 -translate-y-1/2 text-gray-500";
@@ -27,7 +33,7 @@ function Input({
   };
 
   return (
-    <label className={`my-4 w-full ${containerClassName}`}>
+    <label className={`my-2 w-full ${containerClassName}`}>
       {label && (
         <span className="mb-2 block text-sm font-normal text-slate-400">
           {label}
