@@ -102,10 +102,10 @@ function ProjectCard({ project, index }) {
           <div className="flex items-center -space-x-2">
             {project.members.slice(0, 3).map((member) => (
               <Avatar
+                size="mini"
                 key={member.name}
                 src={member.avatar}
                 alt={member.name}
-                className="size-7! sm:size-8!"
               />
             ))}
             {project.members.length > 3 && (

@@ -7,11 +7,11 @@ import {
   LuFileText,
 } from "react-icons/lu";
 
-import Button from "../../components/ui/Button";
 import profileImg from "../../assets/images/amiraliProfile.jpg";
 import CardTitle from "./CardTitle";
 import SectionLayout from "./SectionLayout";
 import ActivityItem from "./ActivityItem";
+import ViewAllItemsButton from "./ViewAllItemsButton";
 
 const activities = [
   {
@@ -104,14 +104,7 @@ export default function ActivityFeed() {
           icon={LuMessageSquare}
         />
 
-        <Button
-          to="/workspace/activities"
-          variant="ghost"
-          size="small"
-          className="rounded-none! border-t border-white/5 pt-4! pb-1 text-nowrap sm:border-none sm:p-2!"
-        >
-          View All
-        </Button>
+        <ViewAllItemsButton to="/workspace/activities" />
       </div>
 
       <div className="grid gap-5 p-4 md:grid-cols-2">
