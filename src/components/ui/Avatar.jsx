@@ -8,6 +8,7 @@ function Avatar({
   ...props
 }) {
   const avatarSizes = {
+    mini: "size-7 sm:size-8",
     small: "size-8 sm:size-10",
     medium: "size-10 sm:size-12",
     large: "size-14 sm:size-16",
