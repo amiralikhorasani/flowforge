@@ -6,7 +6,7 @@ import Form from "../../components/forms/Form";
 
 function LoginForm({ className = "" }) {
   return (
-    <Form className={`${className} space-y-5`}>
+    <Form className={`${className} flex flex-col justify-center`}>
       <Input
         type="email"
         label="Email"
@@ -31,7 +31,11 @@ function LoginForm({ className = "" }) {
         icon={LuLock}
       />
 
-      <Button variant="secondry" size="large" className="w-full justify-center">
+      <Button
+        variant="secondary"
+        size="large"
+        className="mt-5 w-full justify-center"
+      >
         <span>Sign In</span>
         <LuArrowRight size={18} />
       </Button>

@@ -13,7 +13,11 @@ function ForgetPasswordForm({ className = "" }) {
         icon={LuMail}
       />
 
-      <Button variant="secondry" size="large" className="w-full justify-center">
+      <Button
+        variant="secondary"
+        size="large"
+        className="w-full justify-center"
+      >
         <span>Send Reset Link</span>
         <LuArrowRight size={18} />
       </Button>

@@ -5,7 +5,7 @@ import Form from "../../components/forms/Form";
 
 function RegisterForm({ className = "" }) {
   return (
-    <Form className={`${className} space-y-5`}>
+    <Form className={`${className} flex flex-col justify-center`}>
       <Input
         type="text"
         label="Full name"
@@ -28,9 +28,9 @@ function RegisterForm({ className = "" }) {
       />
 
       <Button
-        variant="secondry"
+        variant="secondary"
         size="large"
-        className="mt-7 w-full justify-center"
+        className="mt-5 w-full justify-center"
       >
         <span>Create Account</span>
         <LuArrowRight size={18} />
