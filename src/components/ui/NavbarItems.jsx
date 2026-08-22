@@ -8,7 +8,7 @@ function NavbarItems({
 }) {
   return (
     <ul
-      className={`flex justify-center gap-1 ${column ? "flex-col items-start gap-5" : " items-center"} ${className}`}
+      className={`flex justify-center gap-1 ${column ? "flex-col items-start gap-3" : " items-center"} ${className}`}
     >
       {items.map((item) => (
         <NavItem

@@ -9,7 +9,7 @@ function NavItem({
   return (
     <li
       onClick={handlerCloseMenu}
-      className={`${column ? "w-full flex-col items-start gap-5" : ""} ${className}`}
+      className={`${column ? "w-full flex-col items-start gap-5" : ""} ${className} text-slate-400`}
     >
       <LinkItem to={to} icon={icon} title={title} column={column} />
     </li>
