@@ -8,7 +8,7 @@ const ButtonMotion = motion.create(Button);
 function Hero() {
   return (
     <section className="mt-10 md:mt-20">
-      <div className="flex h-full flex-col items-center justify-start pt-10">
+      <div className="flex h-[90dvh] flex-col items-center justify-start pt-15">
         <motion.h3
           variants={fadeUp(0.5)}
           initial="hidden"
